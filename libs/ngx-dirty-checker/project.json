@@ -1,0 +1,43 @@
+{
+  "name": "ngx-dirty-checker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ngx-dirty-checker/src",
+  "prefix": "ngx-dirty-checker",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/ngx-dirty-checker"],
+      "options": {
+        "project": "libs/ngx-dirty-checker/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngx-dirty-checker/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngx-dirty-checker/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ngx-dirty-checker"],
+      "options": {
+        "jestConfig": "libs/ngx-dirty-checker/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ngx-dirty-checker/**/*.ts",
+          "libs/ngx-dirty-checker/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@code-workers.io/ngx-dirty-checker": [
+        "libs/ngx-dirty-checker/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
