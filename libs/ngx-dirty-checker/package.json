@@ -7,5 +7,19 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "description": "A helper component to visualize and count Angular dirty checks",
+  "keywords": [
+    "angular",
+    "dirty checking",
+    "re-rendering",
+    "change detection"
+  ],
+  "author": "Michael Berger",
+  "license": "MIT",
+  "homepage": "https://github.com/code-workers-io/ngx-dirty-checker/blob/main/libs/ngx-dirty-checker/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-workers-io/ngx-dirty-checker.git"
   }
 }
